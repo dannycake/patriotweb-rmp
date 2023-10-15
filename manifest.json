@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Adds RateMyProfessor scores to MyPatriotWeb",
   "background": {
-    "scripts": ["lib/background.js"]
+    "service_worker": "lib/background.js"
   },
   "content_scripts": [
     {
@@ -17,6 +17,9 @@
       "run_at": "document_end"
     }
   ],
+  "action": {
+
+  },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
   },
